@@ -18,9 +18,9 @@ resource "azurerm_resource_group" "rg-dhundhu" {
 }
 
 resource "azurerm_network_security_group" "Dhundhu" {
-  name                = "dhundhu-security-group"
-  location            = azurerm_resource_group.West Eurupe.location
-  resource_group_name = azurerm_resource_group.rg-dhundhu.name
+  name                = "nsg-dhundhu"
+  location            = azurerm_resource_group.west_europe.location
+  resource_group_name = azurerm_resource_group.west_europe.name
 }
 
 resource "azurerm_virtual_network" "dhundhu" {
