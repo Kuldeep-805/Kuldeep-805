@@ -12,3 +12,8 @@ resource "azurerm_resource_group" "example3" {
   name     = "example-resources-3"
   location = "Central US"
 }
+
+resource "azurerm_resource_group" "example4" {
+  name     = "rg-dhundhu"
+  location = "Centralindia"
+}
